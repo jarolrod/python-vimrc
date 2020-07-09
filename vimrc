@@ -328,7 +328,7 @@ let g:pymode_syntax_docstrings=g:pymode_syntax_all
 " highlight 'long' lines (>= 80 symbols) in python files
 augroup vimrc_autocmds
     autocmd!
-    autocmd FileType python,rst,c,cpp highlight Excess ctermbg=DarkGrey guibg=Black
+    autocmd FileType python,rst,c,cpp highlight ColorColumn ctermbg=DarkGrey guibg=Black
     autocmd FileType python,rst,c,cpp match Excess /\%81v.*/
     autocmd FileType python,rst,c,cpp set nowrap
     autocmd FileType python,rst,c,cpp set colorcolumn=80
